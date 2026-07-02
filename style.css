@@ -26,11 +26,6 @@ html{ scroll-behavior:smooth; }
 
 body{
   background:var(--bg);
-  background-image:url('ChatGPT Image Jul 2, 2026, 07_26_18 AM.png');
-  background-attachment:fixed;
-  background-position:right center;
-  background-repeat:no-repeat;
-  background-size:contain;
   color:var(--text);
   font-family:var(--body);
   font-size:16px;
@@ -38,12 +33,7 @@ body{
   overflow-x:hidden;
 }
 body::before{
-  content:'';
-  position:fixed;
-  inset:0;
-  background:linear-gradient(90deg, rgba(10,10,10,.3) 0%, rgba(10,10,10,.2) 40%, rgba(10,10,10,.1) 70%, rgba(10,10,10,0) 100%);
-  pointer-events:none;
-  z-index:1;
+  display:none;
 }
 
 a{ color:inherit; text-decoration:none; }
@@ -153,10 +143,23 @@ img{ max-width:100%; display:block; }
   display:flex; flex-direction:column; justify-content:center;
   padding:120px 32px 60px;
   overflow:hidden;
+  background-image:url('ChatGPT Image Jul 2, 2026, 07_26_18 AM.png');
+  background-attachment:scroll;
+  background-position:right center;
+  background-repeat:no-repeat;
+  background-size:contain;
+}
+.hero::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg, rgba(10,10,10,.3) 0%, rgba(10,10,10,.2) 40%, rgba(10,10,10,.1) 70%, rgba(10,10,10,0) 100%);
+  pointer-events:none;
+  z-index:0;
 }
 #hexCanvas{
   position:absolute; inset:0; width:100%; height:100%;
-  opacity:.5;
+  opacity:.5; z-index:1;
 }
 .hero-inner{ position:relative; z-index:2; max-width:1180px; margin:0 auto; width:100%; }
 
@@ -439,14 +442,11 @@ a:focus-visible, button:focus-visible{
   .ed-cert-grid{ grid-template-columns:1fr; gap:48px; }
   .hero-stats{ flex-wrap:wrap; }
   .stat{ flex:1 1 45%; border-left:none; border-top:1px solid var(--line-soft); padding:18px 0 0; }
-  body{ background-size:300px; background-position:right bottom; }
-  body::before{ background:linear-gradient(90deg, rgba(10,10,10,.25) 0%, rgba(10,10,10,.15) 50%, rgba(10,10,10,.05) 85%, rgba(10,10,10,0) 100%); }
-}
+  .hero{ background-size:300px; background-position:right bottom; }
+}}
 @media (max-width: 560px){
   .section-inner{ padding:0 20px; }
   .stack-grid{ grid-template-columns:1fr; }
-  .hero{ padding:110px 20px 50px; }
+  .hero{ padding:110px 20px 50px; background-size:250px; background-position:right 20%; }
   .project-head{ flex-direction:column; gap:8px; }
-  body{ background-size:250px; background-position:right 20%; }
-  body::before{ background:linear-gradient(90deg, rgba(10,10,10,.2) 0%, rgba(10,10,10,.1) 40%, rgba(10,10,10,.05) 80%, rgba(10,10,10,0) 100%); }
 }
