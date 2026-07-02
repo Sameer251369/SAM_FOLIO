@@ -41,7 +41,7 @@ body::before{
   content:'';
   position:fixed;
   inset:0;
-  background:linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(10,10,10,.95) 40%, rgba(10,10,10,.7) 70%, rgba(10,10,10,0) 100%);
+  background:linear-gradient(90deg, rgba(10,10,10,.3) 0%, rgba(10,10,10,.2) 40%, rgba(10,10,10,.1) 70%, rgba(10,10,10,0) 100%);
   pointer-events:none;
   z-index:1;
 }
@@ -440,7 +440,7 @@ a:focus-visible, button:focus-visible{
   .hero-stats{ flex-wrap:wrap; }
   .stat{ flex:1 1 45%; border-left:none; border-top:1px solid var(--line-soft); padding:18px 0 0; }
   body{ background-size:300px; background-position:right bottom; }
-  body::before{ background:linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(10,10,10,.98) 50%, rgba(10,10,10,.8) 85%, rgba(10,10,10,0) 100%); }
+  body::before{ background:linear-gradient(90deg, rgba(10,10,10,.25) 0%, rgba(10,10,10,.15) 50%, rgba(10,10,10,.05) 85%, rgba(10,10,10,0) 100%); }
 }
 @media (max-width: 560px){
   .section-inner{ padding:0 20px; }
@@ -448,5 +448,5 @@ a:focus-visible, button:focus-visible{
   .hero{ padding:110px 20px 50px; }
   .project-head{ flex-direction:column; gap:8px; }
   body{ background-size:250px; background-position:right 20%; }
-  body::before{ background:linear-gradient(90deg, rgba(10,10,10,.8) 0%, rgba(10,10,10,.7) 40%, rgba(10,10,10,.4) 80%, rgba(10,10,10,0) 100%); }
+  body::before{ background:linear-gradient(90deg, rgba(10,10,10,.2) 0%, rgba(10,10,10,.1) 40%, rgba(10,10,10,.05) 80%, rgba(10,10,10,0) 100%); }
 }
