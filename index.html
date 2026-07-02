@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sameer Bashir — Full Stack Engineer</title>
+<meta name="description" content="Sameer Bashir — Full Stack Engineer building production web platforms with React, Django REST Framework and PostgreSQL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark">
+      <svg viewBox="0 0 100 88" class="nav-hex"><polygon points="25,2 75,2 100,44 75,86 25,86 0,44"/></svg>
+      <span>SB</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#stack"><span class="dot"></span>STACK</a>
+      <a href="#experience"><span class="dot"></span>EXPERIENCE</a>
+      <a href="#work"><span class="dot"></span>WORK</a>
+      <a href="#contact"><span class="dot"></span>CONTACT</a>
+    </nav>
+    <a href="mailto:sameerbashir522@gmail.com" class="nav-cta">HIRE ME →</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="nav-links-mobile" id="navMobile">
+    <a href="#stack">STACK</a>
+    <a href="#experience">EXPERIENCE</a>
+    <a href="#work">WORK</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <canvas id="hexCanvas"></canvas>
+  <div class="hero-inner">
+    <p class="eyebrow reveal">FULL STACK ENGINEER — BANGALORE, IN</p>
+    <h1 class="hero-title reveal">
+      SAMEER<br><span class="outline">BASHIR</span>
+    </h1>
+    <p class="hero-sub reveal">
+      I build platforms end to end — schema to WebSocket chat to Stripe payments to production.
+      React on the front, Django REST Framework on the back, PostgreSQL underneath.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#work" class="btn btn-fill">VIEW WORK</a>
+      <a href="#contact" class="btn btn-line">GET IN TOUCH</a>
+    </div>
+  </div>
+
+  <div class="hero-stats reveal">
+    <div class="stat">
+      <svg viewBox="0 0 100 88" class="stat-hex"><polygon points="25,2 75,2 100,44 75,86 25,86 0,44"/></svg>
+      <div class="stat-body"><strong>1+</strong><span>YRS SHIPPING PROD</span></div>
+    </div>
+    <div class="stat">
+      <svg viewBox="0 0 100 88" class="stat-hex"><polygon points="25,2 75,2 100,44 75,86 25,86 0,44"/></svg>
+      <div class="stat-body"><strong>2</strong><span>FULL PLATFORMS BUILT</span></div>
+    </div>
+    <div class="stat">
+      <svg viewBox="0 0 100 88" class="stat-hex"><polygon points="25,2 75,2 100,44 75,86 25,86 0,44"/></svg>
+      <div class="stat-body"><strong>3</strong><span>HACKATHON RESULTS</span></div>
+    </div>
+  </div>
+  <a href="#stack" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+</section>
+
+<div class="livery"></div>
+
+<!-- ============ ABOUT ============ -->
+<section class="about">
+  <div class="section-inner">
+    <p class="tag">// 01 — ABOUT</p>
+    <p class="about-text">
+      Full stack developer shipping production web apps with <em>React</em>, <em>Django REST Framework</em>,
+      and <em>PostgreSQL</em>. I've taken a platform from schema design through CI/CD to production —
+      real-time WebSocket chat, Stripe payments, Google OAuth, Cloudinary media pipelines, the whole path.
+      Currently building at <strong>Tech IT Frame Pvt. Ltd.</strong>, Bangalore.
+    </p>
+  </div>
+</section>
+
+<!-- ============ STACK ============ -->
+<section class="stack" id="stack">
+  <div class="section-inner">
+    <p class="tag">// 02 — STACK</p>
+    <h2 class="section-title">WHAT I BUILD WITH</h2>
+
+    <div class="stack-grid">
+      <div class="stack-cat">
+        <h3><span class="hexdot"></span>LANGUAGES</h3>
+        <div class="chips">
+          <span>Python</span><span>JavaScript (ES6+)</span><span>TypeScript</span><span>C++</span>
+        </div>
+      </div>
+      <div class="stack-cat">
+        <h3><span class="hexdot"></span>BACKEND</h3>
+        <div class="chips">
+          <span>Django</span><span>Django REST Framework</span><span>FastAPI</span><span>Node.js</span><span>Express.js</span><span>WebSockets (Channels/Daphne)</span>
+        </div>
+      </div>
+      <div class="stack-cat">
+        <h3><span class="hexdot"></span>FRONTEND</h3>
+        <div class="chips">
+          <span>React.js</span><span>Redux Toolkit</span><span>React Query</span><span>Tailwind CSS</span><span>HTML5 / CSS3</span>
+        </div>
+      </div>
+      <div class="stack-cat">
+        <h3><span class="hexdot"></span>DATA &amp; STORAGE</h3>
+        <div class="chips">
+          <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Cloudinary CDN</span>
+        </div>
+      </div>
+      <div class="stack-cat">
+        <h3><span class="hexdot"></span>AI / LLM</h3>
+        <div class="chips">
+          <span>Groq SDK</span><span>OpenAI API</span><span>Gemini API</span>
+        </div>
+      </div>
+      <div class="stack-cat">
+        <h3><span class="hexdot"></span>DEVOPS &amp; CLOUD</h3>
+        <div class="chips">
+          <span>Docker</span><span>GitHub Actions</span><span>Render</span><span>Vercel</span><span>Netlify</span><span>CI/CD</span><span>GCP Fundamentals</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="livery livery-rev"></div>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="experience" id="experience">
+  <div class="section-inner">
+    <p class="tag">// 03 — EXPERIENCE</p>
+    <h2 class="section-title">ON THE JOB</h2>
+
+    <div class="exp-row">
+      <div class="exp-meta">
+        <span class="exp-date">MAY 2025 — PRESENT</span>
+        <h3>Junior Full Stack Developer</h3>
+        <span class="exp-company">Tech IT Frame Pvt. Ltd. · Bangalore, India</span>
+      </div>
+      <ul class="exp-list">
+        <li>Migrated core product modules from Vue.js to React.js — Redux Toolkit, modern component lifecycles, standardized state management, cut technical debt.</li>
+        <li>Contributed to cloud deployment of <strong>AgroAI</strong>, working on inference pipeline optimization and real-time data flow for production workloads.</li>
+        <li>Built and maintained CI/CD pipelines for zero-downtime deploys across Render and Netlify — environment segmentation, secret management, custom domain routing.</li>
+        <li>Diagnosed and fixed memory leaks and rendering bottlenecks with useMemo, useCallback, and lazy loading — improved initial page-load time by <strong>~25%</strong>.</li>
+        <li>Shipped full-stack features in React and Django across 4+ sprints in an Agile environment, coordinating shared API contracts to hit delivery targets.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="livery"></div>
+
+<!-- ============ WORK ============ -->
+<section class="work" id="work">
+  <div class="section-inner">
+    <p class="tag">// 04 — WORK</p>
+    <h2 class="section-title">SHIPPED PLATFORMS</h2>
+
+    <!-- RallyGrid -->
+    <article class="project">
+      <div class="project-head">
+        <span class="project-index">01</span>
+        <div>
+          <h3>RallyGrid</h3>
+          <p class="project-role">Expedition &amp; Gathering Management Platform</p>
+        </div>
+      </div>
+      <p class="project-desc">
+        Full-stack platform for organizing group expeditions — real-time WebSocket chat, route planning,
+        expense splitting, and role-based join approvals, with React Query powering live notification badges.
+      </p>
+      <ul class="project-points">
+        <li>Monetization via Stripe embedded PaymentElement for paid gatherings, with refund and payment-status logic centralized in a dedicated service layer so every status transition routes through one auditable path.</li>
+        <li>Google OAuth (Google Identity Services) layered onto existing JWT auth, plus forgot-password flow, password visibility toggle, and remember-me session handling.</li>
+        <li>Chat attachment/image upload pipeline via Cloudinary, with a message deduplication utility to stop paginated API responses from dropping older chat history.</li>
+        <li>Migrated SQLite → PostgreSQL for production-grade storage; Django backend on Render running Channels/Daphne for WebSockets, React frontend on Vercel, CORS/CSRF and SPA routing configured for production.</li>
+      </ul>
+      <div class="project-image">
+        <img src="Screenshot 2026-07-02 072957.png" alt="RallyGrid - Expedition management platform">
+      </div>
+      <div class="project-tags">
+        <span>React</span><span>Django REST Framework</span><span>PostgreSQL</span><span>WebSockets</span><span>Stripe</span><span>Google OAuth</span>
+      </div>
+      <div class="project-links">
+        <a href="https://trek-front.vercel.app/" target="_blank" rel="noopener">LIVE DEMO ↗</a>
+        <a href="https://github.com/Sameer251369/Trek-front" target="_blank" rel="noopener">FRONTEND REPO ↗</a>
+        <a href="https://github.com/Sameer251369/Trek-back" target="_blank" rel="noopener">BACKEND REPO ↗</a>
+      </div>
+    </article>
+
+    <!-- ShoeCart -->
+    <article class="project">
+      <div class="project-head">
+        <span class="project-index">02</span>
+        <div>
+          <h3>ShoeCart</h3>
+          <p class="project-role">AI-Powered E-Commerce Platform</p>
+        </div>
+      </div>
+      <p class="project-desc">
+        Full-stack e-commerce platform with React, TypeScript, Django/DRF, and MySQL — memoization and
+        lazy loading cut initial page-load time by ~25%.
+      </p>
+      <ul class="project-points">
+        <li>Context-aware customer assistant built on the Groq SDK, fed live catalog and order context for more relevant answers and product recommendations.</li>
+        <li>Backend services containerized with Docker and deployed through CI/CD pipelines across Render and Netlify.</li>
+        <li>Optimized API/database query paths and static asset delivery, cutting p95 API latency by <strong>30–40%</strong> on frequently accessed endpoints.</li>
+      </ul>
+      <div class="project-image">
+        <img src="Screenshot 2026-07-02 073554.png" alt="ShoeCart - AI-powered e-commerce platform">
+      </div>
+      <div class="project-tags">
+        <span>React</span><span>TypeScript</span><span>Django REST Framework</span><span>MySQL</span><span>Docker</span><span>Groq SDK</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Sameer251369/Shoecart" target="_blank" rel="noopener">FRONTEND REPO ↗</a>
+        <a href="https://github.com/Sameer251369/shoecart-backend" target="_blank" rel="noopener">BACKEND REPO ↗</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<div class="livery livery-rev"></div>
+
+<!-- ============ EDUCATION + CERTS ============ -->
+<section class="ed-cert">
+  <div class="section-inner ed-cert-grid">
+    <div>
+      <p class="tag">// 05 — EDUCATION</p>
+      <h3 class="ed-title">B.Tech, Computer Science &amp; Engineering</h3>
+      <p class="ed-sub">University of Kashmir, Kashmir, J&amp;K · 2020 — 2024</p>
+    </div>
+    <div>
+      <p class="tag">// 06 — CERTS &amp; WINS</p>
+      <ul class="cert-list">
+        <li><span class="hexdot"></span>IBM Certified Full Stack Developer (2025)</li>
+        <li><span class="hexdot"></span>Advanced Python Developer Certification — Apponix Academy</li>
+        <li><span class="hexdot"></span>Founder, kaarbaar.shop — infra platform for local business workflows</li>
+        <li><span class="hexdot"></span>Smart India Hackathon 2023 — Finalist</li>
+        <li><span class="hexdot"></span>HackWithInfy — Top 50</li>
+        <li><span class="hexdot"></span>DevSprint 3.0 — Best AI/ML Hack</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / FOOTER ============ -->
+<footer class="contact" id="contact">
+  <canvas id="hexCanvasFooter"></canvas>
+  <div class="section-inner contact-inner">
+    <p class="tag">// 07 — CONTACT</p>
+    <h2 class="contact-title">LET'S BUILD<br>SOMETHING.</h2>
+    <a href="mailto:sameerbashir522@gmail.com" class="contact-email">sameerbashir522@gmail.com</a>
+    <div class="contact-links">
+      <a href="tel:+916005349142">+91 600 534 9142</a>
+      <a href="https://www.linkedin.com/in/sameer-bashir/" target="_blank" rel="noopener">LINKEDIN ↗</a>
+      <a href="http://github.com/Sameer251369" target="_blank" rel="noopener">GITHUB ↗</a>
+    </div>
+    <div class="foot-bottom">
+      <span>SAMEER BASHIR — BANGALORE, INDIA</span>
+      <span id="year"></span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
