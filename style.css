@@ -136,6 +136,10 @@ img{ max-width:100%; display:block; }
 
 /* ============================================================
    HERO
+   Background image is fixed to the same size/position/attachment
+   at every breakpoint so it never gets smaller or shifts on
+   mobile — only the dark overlay adjusts slightly for legibility
+   against the smaller card of visible text.
 ============================================================ */
 .hero{
   position:relative;
@@ -153,7 +157,7 @@ img{ max-width:100%; display:block; }
   content:'';
   position:absolute;
   inset:0;
-  background:linear-gradient(90deg, rgba(10,10,10,.6) 0%, rgba(10,10,10,.5) 40%, rgba(10,10,10,.3) 70%, rgba(10,10,10,.1) 100%);
+  background:linear-gradient(90deg, rgba(10,10,10,.8) 0%, rgba(10,10,10,.72) 40%, rgba(10,10,10,.55) 70%, rgba(10,10,10,.35) 100%);
   pointer-events:none;
   z-index:0;
 }
@@ -352,7 +356,7 @@ img{ max-width:100%; display:block; }
 .project-links a:hover{ color:var(--accent); }
 
 .project-image{
-  width:100%; max-width:760px; margin:36px 0 28px; border-radius:8px;
+  width:100%; max-width:760px; margin:36px 0 28px;
   border:1px solid var(--line); overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,.5);
 }
 .project-image img{
@@ -432,6 +436,9 @@ a:focus-visible, button:focus-visible{
 
 /* ============================================================
    RESPONSIVE
+   Note: no hero background-size / background-position overrides
+   here on purpose — the hero image stays identical across every
+   breakpoint (see .hero above) so it never shrinks on mobile.
 ============================================================ */
 @media (max-width: 900px){
   .nav-links{ display:none; }
@@ -442,13 +449,10 @@ a:focus-visible, button:focus-visible{
   .ed-cert-grid{ grid-template-columns:1fr; gap:48px; }
   .hero-stats{ flex-wrap:wrap; }
   .stat{ flex:1 1 45%; border-left:none; border-top:1px solid var(--line-soft); padding:18px 0 0; }
-  .hero{ background-size:300px; background-position:right bottom; }
-  .hero::before{ background:linear-gradient(90deg, rgba(10,10,10,.55) 0%, rgba(10,10,10,.45) 50%, rgba(10,10,10,.25) 85%, rgba(10,10,10,.05) 100%); }
-}}
+}
 @media (max-width: 560px){
   .section-inner{ padding:0 20px; }
   .stack-grid{ grid-template-columns:1fr; }
-  .hero{ padding:110px 20px 50px; background-size:420px; background-position:right center; }
-  .hero::before{ background:linear-gradient(90deg, rgba(10,10,10,.65) 0%, rgba(10,10,10,.55) 40%, rgba(10,10,10,.35) 70%, rgba(10,10,10,.1) 100%); }
+  .hero{ padding:110px 20px 50px; }
   .project-head{ flex-direction:column; gap:8px; }
 }
