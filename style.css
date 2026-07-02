@@ -453,6 +453,6 @@ a:focus-visible, button:focus-visible{
 @media (max-width: 560px){
   .section-inner{ padding:0 20px; }
   .stack-grid{ grid-template-columns:1fr; }
-  .hero{ padding:110px 20px 50px; background-size:cover; background-position:right center; }
+  .hero{ padding:110px 20px 50px; background-size:cover; background-position:center left; }
   .project-head{ flex-direction:column; gap:8px; }
 }
