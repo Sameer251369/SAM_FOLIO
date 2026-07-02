@@ -1,0 +1,7 @@
+{
+  "name": "SAM_FOLIO",
+  "version": 2,
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "public": true
+}
