@@ -447,6 +447,6 @@ a:focus-visible, button:focus-visible{
   .stack-grid{ grid-template-columns:1fr; }
   .hero{ padding:110px 20px 50px; }
   .project-head{ flex-direction:column; gap:8px; }
-  body{ background-size:200px; background-position:right bottom; }
-  body::before{ background:linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(10,10,10,.99) 60%, rgba(10,10,10,.9) 90%, rgba(10,10,10,.5) 100%); }
+  body{ background-size:250px; background-position:right 20%; }
+  body::before{ background:linear-gradient(90deg, rgba(10,10,10,.8) 0%, rgba(10,10,10,.7) 40%, rgba(10,10,10,.4) 80%, rgba(10,10,10,0) 100%); }
 }
